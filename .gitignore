@@ -9,6 +9,8 @@ jspm_packages/
 *.jsx.map
 *.d.ts
 
+
+*.sqlite3
 # TypeScript v1 declaration files
 typings/
 
