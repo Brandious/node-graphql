@@ -1,0 +1,74 @@
+[
+  {
+    "id": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+    "name": "J.K. Rowling",
+    "age": 58,
+    "rating": 4.8
+  },
+  {
+    "id": "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q7",
+    "name": "Agatha Christie",
+    "age": 85,
+    "rating": 4.9
+  },
+  {
+    "id": "c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7r8",
+    "name": "H.G. Wells",
+    "age": 78,
+    "rating": 4.7
+  },
+  {
+    "id": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
+    "name": "Jack London",
+    "age": 40,
+    "rating": 4.6
+  },
+  {
+    "id": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
+    "name": "Mary Higgins Clark",
+    "age": 92,
+    "rating": 4.5
+  },
+  {
+    "id": "f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u1",
+    "name": "Jules Verne",
+    "age": 77,
+    "rating": 4.9
+  },
+  {
+    "id": "g7h8i9j0-k1l2-m3n4-o5p6-q7r8s9t0u1v2",
+    "name": "Arthur Conan Doyle",
+    "age": 71,
+    "rating": 4.8
+  },
+  {
+    "id": "h8i9j0k1-l2m3-n4o5-p6q7-r8s9t0u1v2w3",
+    "name": "Charles Dickens",
+    "age": 58,
+    "rating": 4.7
+  },
+  {
+    "id": "i9j0k1l2-m3n4-o5p6-q7r8-s9t0u1v2w3x4",
+    "name": "C.S. Lewis",
+    "age": 64,
+    "rating": 4.9
+  },
+  {
+    "id": "j0k1l2m3-n4o5-p6q7-r8s9-t0u1v2w3x4y5",
+    "name": "F. Scott Fitzgerald",
+    "age": 44,
+    "rating": 4.6
+  },
+  {
+    "id": "k1l2m3n4-o5p6-q7r8-s9t0-u1v2w3x4y5z6",
+    "name": "Ray Bradbury",
+    "age": 91,
+    "rating": 4.8
+  },
+  {
+    "id": "l2m3n4o5-p6q7-r8s9-t0u1-v2w3x4y5z6a7",
+    "name": "Shirley Jackson",
+    "age": 48,
+    "rating": 4.7
+  }
+]
