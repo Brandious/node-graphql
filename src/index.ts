@@ -1,8 +1,7 @@
-import express, { Express } from "express";
 import * as dotenv from "dotenv";
-import { Request, expressjwt as jwt } from "express-jwt";
-
+import express, { Express } from "express";
 import { graphqlHTTP } from "express-graphql";
+import { verifyTokenMiddleware } from "./middleware/verifyTokenMiddleware";
 import schema from "./schema/schema";
 
 dotenv.config();
@@ -11,20 +10,22 @@ const port = process.env.PORT || 3000;
 const app: Express = express();
 
 app.use(
-  "/protected",
-  jwt({ secret: process.env.JWT_SECRET!, algorithms: ["HS256"] }),
-  (req: Request, res) => {
-    if (req.auth) return res.send(`Welcome ${JSON.stringify(req.auth)}`);
-
-    return res.status(401).send("Unauthorized");
-  }
+  verifyTokenMiddleware.unless({
+    path: ["/public", "/graphql"],
+  })
 );
+
+app.use("/protected", (req, res) => {
+  res.send("Protected route");
+});
 
 app.use(
   "/graphql",
   graphqlHTTP({
     schema: schema,
-    graphiql: true,
+    graphiql: {
+      headerEditorEnabled: true,
+    },
   })
 );
 
