@@ -7,6 +7,7 @@ dotenv.config();
 
 const conf = config[process.env.NODE_ENV || "development"];
 
+console.log(conf);
 const db = knex(conf);
 
 export default db;

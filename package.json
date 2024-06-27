@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start:dev": "nodemon",
+    "dev:start": "nodemon",
+    "dev:seed": "yarn knex migrate:latest && yarn knex seed:run",
     "knex": "./node_modules/.bin/knex --knexfile src/database/knexfile.ts"
   },
   "devDependencies": {
