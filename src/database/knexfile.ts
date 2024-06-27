@@ -1,49 +1,19 @@
 import type { Knex } from "knex";
 
+import dotenv from "dotenv";
+dotenv.config();
+
 // Update with your config settings.
 
 const config: { [key: string]: Knex.Config } = {
   development: {
-    client: "sqlite3",
+    client: process.env.DB_CLIENT!,
     connection: {
-      filename:
-        "/home/brandious/Dev/node/node-graphql/src/database/dev.sqlite3",
+      filename: process.env.FILEPATH!,
     },
-    debug: true,
+    debug: !!process.env.DEBUG,
     useNullAsDefault: true,
-
-  },
-
-  staging: {
-    client: "postgresql",
-    connection: {
-      database: "my_db",
-      user: "username",
-      password: "password",
-    },
-    pool: {
-      min: 2,
-      max: 10,
-    },
-    migrations: {
-      tableName: "knex_migrations",
-    },
-  },
-
-  production: {
-    client: "postgresql",
-    connection: {
-      database: "my_db",
-      user: "username",
-      password: "password",
-    },
-    pool: {
-      min: 2,
-      max: 10,
-    },
-    migrations: {
-      tableName: "knex_migrations",
-    },
   },
 };
+
 export default config;
